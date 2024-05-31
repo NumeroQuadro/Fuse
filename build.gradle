@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.client'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.apache.tika:tika-core:1.22'
+    implementation 'com.github.serceman:jnr-fuse:0.5.7'
+    implementation 'com.github.jnr:jnr-ffi:2.1.15'
+    implementation 'org.apache.tika:tika-parsers:1.22'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+//tasks.register('run', JavaExec) {
+//    mainClass = 'source.Mp3VirtualFS'
+//    classpath = sourceSets.main.runtimeClasspath
+//    args '/mnt/c/Users/dimab/Downloads/Telegram Desktop/mp3ex', '/mnt/c/Users/dimab/Downloads/Telegram Desktop/mp3mount'
+//}
