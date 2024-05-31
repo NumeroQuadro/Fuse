@@ -23,8 +23,8 @@ test {
     useJUnitPlatform()
 }
 
-//tasks.register('run', JavaExec) {
-//    mainClass = 'source.Mp3VirtualFS'
-//    classpath = sourceSets.main.runtimeClasspath
-//    args '/mnt/c/Users/dimab/Downloads/Telegram Desktop/mp3ex', '/mnt/c/Users/dimab/Downloads/Telegram Desktop/mp3mount'
-//}
+tasks.register('run', JavaExec) {
+    mainClass = 'source.Mp3VirtualFS'
+    classpath = sourceSets.main.runtimeClasspath
+    args '/mnt/c/Users/dimab/Downloads/Telegram Desktop/mp3ex', '/mnt/c/Users/dimab/Downloads/Telegram Desktop/mp3mount'
+}
